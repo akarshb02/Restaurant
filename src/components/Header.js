@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/solid'
 import Logo from "./../Assets/Logo.svg";
+import { NavLink } from 'react-router-dom';
 
 
 const Header = () => {
  let Links = [
-  { name: "ABOUT", link: "/about" },
   { name: "PRODUCTS", link: "/products" },
   { name: "TESTIMONIALS", link: "/testimonial" },
+  { name: "ABOUT", link: "/about" },
   { name: "CONTACT", link: "/contact" },
  ];
  let [open, setOpen] = useState(false);
@@ -34,10 +35,10 @@ const Header = () => {
      {
       Links.map((link) => (
        <li className='md:ml-8 md:my-0 my-7 font-semibold'>
-        <a href={link.link} className='text-gray-800 hover:text-blue-400 duration-500'>{link.name}</a>
+        <NavLink to={link.link} className='text-gray-800 hover:text-blue-400 duration-500'>{link.name}</NavLink>
        </li>))
      }
-     <button className='btn bg-blue-600 text-white md:ml-8 font-semibold px-3 py-1 rounded duration-500 md:static'></button>
+     {/* <button className='btn bg-blue-600 text-white md:ml-8 font-semibold px-3 py-1 rounded duration-500 md:static'>CONTACT US</button> */}
     </ul>
    </div>
   </div>
