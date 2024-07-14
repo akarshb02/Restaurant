@@ -19,14 +19,15 @@ function App() {
     <div className="">
 
       <BrowserRouter>
-        <Header />
+        <div className="relative">
+          <Header />
+        </div>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/testimonial" element={<Testimonial />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/products" element={<Products />} />
-
         </Routes>
         <Footer />
       </BrowserRouter>

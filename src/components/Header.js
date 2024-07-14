@@ -6,6 +6,7 @@ import { NavLink } from 'react-router-dom';
 
 const Header = () => {
  let Links = [
+  { name: "HOME", link: "/" },
   { name: "PRODUCTS", link: "/products" },
   { name: "TESTIMONIALS", link: "/testimonial" },
   { name: "ABOUT", link: "/about" },
