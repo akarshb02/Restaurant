@@ -10,7 +10,7 @@ const Home = () => {
   <div className="relative ">
    <Header />
    <div className="grid sm:flex pt-12 max-w-[1500]">
-    <div className="absolute -top-24 hidden 2xl:block -right-44 -z-[2]">
+    <div className="absolute -top-24 hidden lg:block -right-44 -z-[2]">
      <img src={BannerBackground} alt="" />
     </div>
     <div className=" flex flex-1 flex-col justify-center  items-start p-10 sm:p-32">
