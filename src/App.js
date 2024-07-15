@@ -29,7 +29,9 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/products" element={<Products />} />
         </Routes>
-        <Footer />
+        <div className="mt-96">
+          <Footer />
+        </div>
       </BrowserRouter>
     </div>
   );
